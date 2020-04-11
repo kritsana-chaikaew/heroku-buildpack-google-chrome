@@ -31,9 +31,7 @@ function indent() {
   esac
 }
 
-topic "user: $(whoami)"
-topic "date: $(date)"
-env
+topic "build dir: $BUILD_DIR"
 
 # Detect requested channel or default to stable
 if [ -f $ENV_DIR/GOOGLE_CHROME_CHANNEL ]; then
