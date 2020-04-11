@@ -31,6 +31,10 @@ function indent() {
   esac
 }
 
+topic "user: $(whoami)"
+topic "date: $(date)"
+env
+
 # Detect requested channel or default to stable
 if [ -f $ENV_DIR/GOOGLE_CHROME_CHANNEL ]; then
   channel=$(cat $ENV_DIR/GOOGLE_CHROME_CHANNEL)
